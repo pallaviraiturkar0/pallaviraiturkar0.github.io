@@ -20,11 +20,11 @@
   <circle cx="720" cy="92" r="9" fill="#62f2c2"/>
   <path d="m1076 130 8 19 20 8-20 8-8 19-8-19-20-8 20-8 8-19Z" fill="none" stroke="#ff9fdb" stroke-width="3"/>
   <text x="72" y="96" fill="#62f2c2" font-family="Arial, sans-serif" font-size="22" font-weight="700">
-    PALLAVI RAITURKAR
+    STAFF SOFTWARE ENGINEER · GITHUB
   </text>
   <text x="72" y="258" fill="#f3f5ff" font-family="Arial, sans-serif" font-size="72" font-weight="700">
-    <tspan x="72" dy="0">Engineer, researcher,</tspan>
-    <tspan x="72" dy="84">maker.</tspan>
+    <tspan x="72" dy="0">Pallavi</tspan>
+    <tspan x="72" dy="84">Raiturkar</tspan>
   </text>
   <text x="72" y="536" fill="#b7bed1" font-family="Arial, sans-serif" font-size="25">
     Eye-tracking research · Full-stack · AI systems · Copilot Chat at GitHub
