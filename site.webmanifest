@@ -1,0 +1,17 @@
+{
+  "name": "Pallavi Raiturkar",
+  "short_name": "Pallavi",
+  "description": "Pallavi Raiturkar — Staff Software Engineer building GitHub Copilot.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0d1c",
+  "theme_color": "#0b0d1c",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

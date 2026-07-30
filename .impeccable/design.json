@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-30T17:56:04Z",
+  "title": "Design System: Pallavi Raiturkar",
+  "extensions": {
+    "colorMeta": {
+      "night": {
+        "role": "neutral",
+        "displayName": "Night",
+        "canonical": "oklch(0.115 0.026 278)",
+        "tonalRamp": [
+          "oklch(0.1 0.013 278)",
+          "oklch(0.18 0.016 278)",
+          "oklch(0.28 0.02 278)",
+          "oklch(0.4 0.024 278)",
+          "oklch(0.52 0.026 278)",
+          "oklch(0.64 0.025 278)",
+          "oklch(0.76 0.022 278)",
+          "oklch(0.86 0.019 278)",
+          "oklch(0.94 0.016 278)"
+        ]
+      },
+      "deep-surface": {
+        "role": "neutral",
+        "displayName": "Deep Surface",
+        "canonical": "oklch(0.15 0.035 273)",
+        "tonalRamp": [
+          "oklch(0.1 0.017 273)",
+          "oklch(0.18 0.022 273)",
+          "oklch(0.28 0.027 273)",
+          "oklch(0.4 0.032 273)",
+          "oklch(0.52 0.035 273)",
+          "oklch(0.64 0.034 273)",
+          "oklch(0.76 0.03 273)",
+          "oklch(0.86 0.025 273)",
+          "oklch(0.94 0.021 273)"
+        ]
+      },
+      "raised-surface": {
+        "role": "neutral",
+        "displayName": "Raised Surface",
+        "canonical": "oklch(0.24 0.06 274)",
+        "tonalRamp": [
+          "oklch(0.1 0.029 274)",
+          "oklch(0.18 0.038 274)",
+          "oklch(0.28 0.047 274)",
+          "oklch(0.4 0.055 274)",
+          "oklch(0.52 0.06 274)",
+          "oklch(0.64 0.058 274)",
+          "oklch(0.76 0.052 274)",
+          "oklch(0.86 0.044 274)",
+          "oklch(0.94 0.036 274)"
+        ]
+      },
+      "signal-mint": {
+        "role": "primary",
+        "displayName": "Signal Mint",
+        "canonical": "oklch(0.78 0.14 184)",
+        "tonalRamp": [
+          "oklch(0.1 0.068 184)",
+          "oklch(0.18 0.089 184)",
+          "oklch(0.28 0.11 184)",
+          "oklch(0.4 0.129 184)",
+          "oklch(0.52 0.139 184)",
+          "oklch(0.64 0.135 184)",
+          "oklch(0.76 0.12 184)",
+          "oklch(0.86 0.102 184)",
+          "oklch(0.94 0.084 184)"
+        ]
+      },
+      "signal-blue": {
+        "role": "primary",
+        "displayName": "Signal Blue",
+        "canonical": "oklch(0.67 0.2 250)",
+        "tonalRamp": [
+          "oklch(0.1 0.098 250)",
+          "oklch(0.18 0.127 250)",
+          "oklch(0.28 0.157 250)",
+          "oklch(0.4 0.184 250)",
+          "oklch(0.52 0.199 250)",
+          "oklch(0.64 0.193 250)",
+          "oklch(0.76 0.172 250)",
+          "oklch(0.86 0.146 250)",
+          "oklch(0.94 0.12 250)"
+        ]
+      },
+      "signal-violet": {
+        "role": "primary",
+        "displayName": "Signal Violet",
+        "canonical": "oklch(0.66 0.23 286)",
+        "tonalRamp": [
+          "oklch(0.1 0.112 286)",
+          "oklch(0.18 0.146 286)",
+          "oklch(0.28 0.181 286)",
+          "oklch(0.4 0.212 286)",
+          "oklch(0.52 0.229 286)",
+          "oklch(0.64 0.222 286)",
+          "oklch(0.76 0.198 286)",
+          "oklch(0.86 0.168 286)",
+          "oklch(0.94 0.138 286)"
+        ]
+      },
+      "signal-iris": {
+        "role": "secondary",
+        "displayName": "Signal Iris",
+        "canonical": "oklch(0.77 0.18 313)",
+        "tonalRamp": [
+          "oklch(0.1 0.088 313)",
+          "oklch(0.18 0.114 313)",
+          "oklch(0.28 0.141 313)",
+          "oklch(0.4 0.166 313)",
+          "oklch(0.52 0.179 313)",
+          "oklch(0.64 0.174 313)",
+          "oklch(0.76 0.155 313)",
+          "oklch(0.86 0.131 313)",
+          "oklch(0.94 0.108 313)"
+        ]
+      },
+      "signal-coral": {
+        "role": "secondary",
+        "displayName": "Signal Coral",
+        "canonical": "oklch(0.76 0.17 25)",
+        "tonalRamp": [
+          "oklch(0.1 0.083 25)",
+          "oklch(0.18 0.108 25)",
+          "oklch(0.28 0.133 25)",
+          "oklch(0.4 0.157 25)",
+          "oklch(0.52 0.169 25)",
+          "oklch(0.64 0.164 25)",
+          "oklch(0.76 0.146 25)",
+          "oklch(0.86 0.124 25)",
+          "oklch(0.94 0.102 25)"
+        ]
+      },
+      "studio-paper": {
+        "role": "neutral",
+        "displayName": "Studio Paper",
+        "canonical": "oklch(0.94 0.024 250)",
+        "tonalRamp": [
+          "oklch(0.1 0.012 250)",
+          "oklch(0.18 0.015 250)",
+          "oklch(0.28 0.019 250)",
+          "oklch(0.4 0.022 250)",
+          "oklch(0.52 0.024 250)",
+          "oklch(0.64 0.023 250)",
+          "oklch(0.76 0.021 250)",
+          "oklch(0.86 0.017 250)",
+          "oklch(0.94 0.014 250)"
+        ]
+      },
+      "light-ink": {
+        "role": "neutral",
+        "displayName": "Light Ink",
+        "canonical": "oklch(0.965 0.012 255)",
+        "tonalRamp": [
+          "oklch(0.1 0.006 255)",
+          "oklch(0.18 0.008 255)",
+          "oklch(0.28 0.009 255)",
+          "oklch(0.4 0.011 255)",
+          "oklch(0.52 0.012 255)",
+          "oklch(0.64 0.012 255)",
+          "oklch(0.76 0.01 255)",
+          "oklch(0.86 0.009 255)",
+          "oklch(0.94 0.007 255)"
+        ]
+      },
+      "light-ink-soft": {
+        "role": "neutral",
+        "displayName": "Light Ink Soft",
+        "canonical": "oklch(0.78 0.025 260)",
+        "tonalRamp": [
+          "oklch(0.1 0.012 260)",
+          "oklch(0.18 0.016 260)",
+          "oklch(0.28 0.02 260)",
+          "oklch(0.4 0.023 260)",
+          "oklch(0.52 0.025 260)",
+          "oklch(0.64 0.024 260)",
+          "oklch(0.76 0.021 260)",
+          "oklch(0.86 0.018 260)",
+          "oklch(0.94 0.015 260)"
+        ]
+      },
+      "dark-ink": {
+        "role": "neutral",
+        "displayName": "Dark Ink",
+        "canonical": "oklch(0.18 0.035 273)",
+        "tonalRamp": [
+          "oklch(0.1 0.017 273)",
+          "oklch(0.18 0.022 273)",
+          "oklch(0.28 0.027 273)",
+          "oklch(0.4 0.032 273)",
+          "oklch(0.52 0.035 273)",
+          "oklch(0.64 0.034 273)",
+          "oklch(0.76 0.03 273)",
+          "oklch(0.86 0.025 273)",
+          "oklch(0.94 0.021 273)"
+        ]
+      },
+      "dark-ink-soft": {
+        "role": "neutral",
+        "displayName": "Dark Ink Soft",
+        "canonical": "oklch(0.41 0.036 262)",
+        "tonalRamp": [
+          "oklch(0.1 0.018 262)",
+          "oklch(0.18 0.023 262)",
+          "oklch(0.28 0.028 262)",
+          "oklch(0.4 0.033 262)",
+          "oklch(0.52 0.036 262)",
+          "oklch(0.64 0.035 262)",
+          "oklch(0.76 0.031 262)",
+          "oklch(0.86 0.026 262)",
+          "oklch(0.94 0.022 262)"
+        ]
+      },
+      "dark-line": {
+        "role": "neutral",
+        "displayName": "Dark Line",
+        "canonical": "oklch(0.36 0.045 275)",
+        "tonalRamp": [
+          "oklch(0.1 0.022 275)",
+          "oklch(0.18 0.028 275)",
+          "oklch(0.28 0.035 275)",
+          "oklch(0.4 0.041 275)",
+          "oklch(0.52 0.045 275)",
+          "oklch(0.64 0.044 275)",
+          "oklch(0.76 0.039 275)",
+          "oklch(0.86 0.033 275)",
+          "oklch(0.94 0.027 275)"
+        ]
+      }
+    },
+    "gradients": {
+      "gradient-signal": {
+        "description": "The signal spectrum. Mint to blue to violet to coral, used for actions, borders, and light crossing a surface. Never for text.",
+        "css": "linear-gradient(120deg, oklch(0.78 0.14 184) 0%, oklch(0.67 0.20 250) 40%, oklch(0.66 0.23 286) 68%, oklch(0.76 0.17 25) 100%)"
+      },
+      "gradient-quiet": {
+        "description": "Low-energy depth field for raised surfaces.",
+        "css": "linear-gradient(135deg, oklch(0.2 0.06 275) 0%, oklch(0.16 0.045 282) 48%, oklch(0.18 0.052 244) 100%)"
+      }
+    },
+    "motion": {
+      "ease-out": "cubic-bezier(0.22, 1, 0.36, 1)",
+      "principles": [
+        "Fields morph and drift slowly; interface responses are quick and exponential.",
+        "Every animation has a prefers-reduced-motion alternative.",
+        "Content is visible by default; motion enhances, never gates."
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary in-page action. Signal-spectrum fill with dark ink, drifting slowly.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#work\">View selected work <span aria-hidden=\"true\">↓</span></a>",
+      "css": ".ds-btn-primary { display:inline-flex; min-height:52px; align-items:center; gap:12px; padding:13px 18px 13px 22px; border-radius:999px; color:oklch(0.12 0.03 278); background:linear-gradient(120deg,oklch(0.78 0.14 184),oklch(0.67 0.2 250) 40%,oklch(0.66 0.23 286) 68%,oklch(0.76 0.17 25)); background-size:180% 180%; font:600 14px/1 Geologica,sans-serif; text-decoration:none; box-shadow:0 11px 34px oklch(0.55 0.2 281 / 0.2); transition:transform 320ms cubic-bezier(0.22,1,0.36,1); } .ds-btn-primary:hover { transform:translateY(-3px) scale(1.015); } .ds-btn-primary:focus-visible { outline:3px solid oklch(0.78 0.14 184); outline-offset:4px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Secondary action. Dark fill with a signal-spectrum hairline border.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"mailto:pallavi.raiturkar0@gmail.com\">Email me</a>",
+      "css": ".ds-btn-secondary { display:inline-flex; min-height:52px; align-items:center; gap:12px; padding:13px 22px; border:1px solid transparent; border-radius:999px; color:oklch(0.965 0.012 255); background:linear-gradient(oklch(0.15 0.035 273),oklch(0.15 0.035 273)) padding-box,linear-gradient(120deg,oklch(0.78 0.14 184),oklch(0.66 0.23 286) 68%,oklch(0.76 0.17 25)) border-box; font:600 14px/1 Geologica,sans-serif; text-decoration:none; transition:transform 320ms cubic-bezier(0.22,1,0.36,1); } .ds-btn-secondary:hover { transform:translateY(-3px); } .ds-btn-secondary:focus-visible { outline:3px solid oklch(0.78 0.14 184); outline-offset:4px; }"
+    },
+    {
+      "name": "Publication Row",
+      "kind": "list-item",
+      "refersTo": "publication-link",
+      "description": "A reading-list row: year and venue in DM Mono, title in Geologica, external-link arrow. Rules, not cards.",
+      "html": "<a class=\"ds-pub\" href=\"https://doi.org/10.1142/S1793351X19400183\"><span class=\"y\">2019</span><span class=\"v\">International Journal of Semantic Computing</span><span class=\"t\">A Benchmark of Four Methods for Generating 360° Saliency Maps from Eye Tracking Data</span><span class=\"a\" aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-pub { display:grid; grid-template-columns:4rem 18rem 1fr auto; gap:1.5rem; align-items:baseline; padding:1.25rem 0; border-bottom:1px solid oklch(0.36 0.045 275 / 0.55); color:oklch(0.965 0.012 255); text-decoration:none; transition:transform 500ms cubic-bezier(0.22,1,0.36,1),background 500ms; } .ds-pub .y,.ds-pub .v { font-family:\"DM Mono\",monospace; font-size:0.8125rem; color:oklch(0.78 0.025 260); } .ds-pub .t { font-weight:600; } .ds-pub .a { color:oklch(0.78 0.14 184); } .ds-pub:hover { background:linear-gradient(90deg,oklch(0.66 0.22 288 / 0.15),transparent 72%); transform:translateX(0.45rem); }"
+    },
+    {
+      "name": "Work Entry",
+      "kind": "section",
+      "refersTo": "work-entry",
+      "description": "Role metadata, a direct project statement, scope, and outcome evidence with a hand-drawn mark. Lifts and illuminates on hover.",
+      "html": "<article class=\"ds-work\"><header><p>GitHub</p><p>Staff Software Engineer</p><p>Jul 2025–Now</p></header><div><h3>Making Copilot Chat faster, simpler, and easier to trust.</h3><p>Architecture, quality, performance, and agent capabilities.</p></div><div class=\"mark\" aria-hidden=\"true\"></div></article>",
+      "css": ".ds-work { position:relative; display:grid; grid-template-columns:14rem 1fr 5rem; gap:2rem; padding:3rem 0; border-top:1px solid oklch(0.5 0.06 273 / 0.26); border-radius:1.35rem; isolation:isolate; overflow:hidden; transition:transform 600ms cubic-bezier(0.22,1,0.36,1),box-shadow 600ms; } .ds-work header p { font-family:\"DM Mono\",monospace; font-size:0.8125rem; } .ds-work header p:first-child { color:oklch(0.78 0.14 184); } .ds-work:hover { transform:translate3d(0,-7px,0); box-shadow:0 28px 62px oklch(0.05 0.03 276 / 0.38); }"
+    },
+    {
+      "name": "Studio Figure",
+      "kind": "media",
+      "refersTo": "studio-figure",
+      "description": "An original visual study on the pale studio surface. Behaves like a physical object: real shadow, slight rotation on hover.",
+      "html": "<figure class=\"ds-studio\"><img src=\"/assets/studio-form.svg\" alt=\"Contour study\"><figcaption><span>Form study</span><span>Contour / repetition</span></figcaption></figure>",
+      "css": ".ds-studio img { display:block; width:100%; border:1px solid oklch(0.36 0.06 270 / 0.12); border-radius:1rem; box-shadow:0 24px 65px oklch(0.24 0.09 278 / 0.15); transition:transform 900ms cubic-bezier(0.22,1,0.36,1),box-shadow 900ms; } .ds-studio figcaption { display:flex; justify-content:space-between; margin-top:0.9rem; font-size:0.8125rem; color:oklch(0.41 0.036 262); } .ds-studio:hover { transform:translateY(-0.65rem) rotate(-0.4deg); } .ds-studio:hover img { transform:scale(1.018); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Luminous Field",
+    "summary": "A deep-ink engineering portfolio lit by a moving signal spectrum. Mint, blue, violet, iris, and coral trace a path from perception research to AI product work. Hand-drawn marks reference eye tracking, networks, layers, and making. A pale studio room holds the separate art practice.",
+    "rules": [
+      "The Track Separation Rule: signal mint marks engineering evidence, iris marks research, studio paper marks personal making.",
+      "The No Orange Rule: orange and warm startup neutrals are prohibited.",
+      "The Illuminated Surface Rule: gradients describe moving signal, depth, or light crossing a surface. Gradient text stays prohibited.",
+      "The Doodle Has Meaning Rule: every hand-drawn mark maps to perception, attention, connection, layers, or making.",
+      "The Two-Voice Rule: Geologica speaks in complete ideas, DM Mono annotates the system.",
+      "The Signal Depth Rule: shadows follow a transformation or a physical layer, never decorate every container."
+    ]
+  }
+}

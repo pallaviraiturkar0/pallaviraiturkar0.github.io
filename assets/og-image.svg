@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="field" cx="0" cy="0" r="1" gradientTransform="translate(1010 280) rotate(135) scale(500 430)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a55dff"/>
+      <stop offset=".42" stop-color="#293cb7"/>
+      <stop offset="1" stop-color="#0b0d1c"/>
+    </radialGradient>
+    <linearGradient id="signal" x1="696" y1="86" x2="1136" y2="488" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#62f2c2"/>
+      <stop offset=".45" stop-color="#6fc6ff"/>
+      <stop offset=".78" stop-color="#d389ef"/>
+      <stop offset="1" stop-color="#ff8c9d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b0d1c"/>
+  <circle cx="1010" cy="315" r="390" fill="url(#field)" opacity=".95"/>
+  <circle cx="1005" cy="315" r="164" fill="none" stroke="#f3f5ff" stroke-opacity=".4" stroke-width="2" stroke-dasharray="8 11"/>
+  <path d="M720 92c158 0 123 152 285 156 124 3 42 156 132 220" fill="none" stroke="url(#signal)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M825 440c88-75 173-65 285 16" fill="none" stroke="#62f2c2" stroke-opacity=".72" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="720" cy="92" r="9" fill="#62f2c2"/>
+  <path d="m1076 130 8 19 20 8-20 8-8 19-8-19-20-8 20-8 8-19Z" fill="none" stroke="#ff9fdb" stroke-width="3"/>
+  <text x="72" y="96" fill="#62f2c2" font-family="Arial, sans-serif" font-size="22" font-weight="700">
+    PALLAVI RAITURKAR
+  </text>
+  <text x="72" y="258" fill="#f3f5ff" font-family="Arial, sans-serif" font-size="72" font-weight="700">
+    <tspan x="72" dy="0">Engineer, researcher,</tspan>
+    <tspan x="72" dy="84">maker.</tspan>
+  </text>
+  <text x="72" y="536" fill="#b7bed1" font-family="Arial, sans-serif" font-size="25">
+    Eye-tracking research · Full-stack · AI systems · Copilot Chat at GitHub
+  </text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <defs>
+    <linearGradient id="lightBg" x1="690" y1="70" x2="1170" y2="710" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#eff7ff"/>
+      <stop offset=".52" stop-color="#dbccff"/>
+      <stop offset="1" stop-color="#ffc0d9"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="360" y1="0" x2="620" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#72f3c7"/>
+      <stop offset=".48" stop-color="#6ac9ff"/>
+      <stop offset="1" stop-color="#9e72ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#lightBg)"/>
+  <path d="M0 760V0h595c85 128 111 251 78 369-35 126-155 221-360 284L0 760Z" fill="#0b1024"/>
+  <path d="M486 0h292L598 760H311L486 0Z" fill="url(#beam)"/>
+  <circle cx="899" cy="376" r="182" fill="none" stroke="#24224a" stroke-width="3"/>
+  <circle cx="899" cy="376" r="70" fill="#e27ed7"/>
+  <path d="M742 670c94-48 202 45 362-8" fill="none" stroke="#24224a" stroke-width="3" stroke-linecap="round"/>
+  <path d="m1038 110 9 22 23 9-23 9-9 22-9-22-23-9 23-9 9-22Z" fill="none" stroke="#24224a" stroke-width="3"/>
+  <text x="741" y="715" fill="#24224a" font-family="Arial, sans-serif" font-size="18" letter-spacing="3">APERTURE / 04</text>
+</svg>
