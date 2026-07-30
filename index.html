@@ -119,17 +119,20 @@
             </g>
             <g class="signal-point signal-point-two">
               <circle cx="358" cy="132" r="25"></circle>
-              <path d="M341 132h34M358 115v34"></path>
+              <circle class="signal-dwell" cx="358" cy="132" r="14.5"></circle>
+              <circle cx="358" cy="132" r="4.5"></circle>
             </g>
-            <g class="doodle-eye">
-              <path d="M561 190c26-27 67-27 94 0-27 28-68 28-94 0Z"></path>
-              <circle cx="608" cy="190" r="11"></circle>
-              <path d="m570 163-9-14m28 6-2-17m24 17 6-16m18 25 12-11"></path>
+            <g class="gaze-cluster">
+              <circle class="gaze-dot" cx="143" cy="320" r="5"></circle>
+              <circle cx="176" cy="257" r="14"></circle>
+              <circle class="signal-dwell" cx="176" cy="257" r="7.6"></circle>
+              <circle class="gaze-core" cx="176" cy="257" r="3.6"></circle>
+              <circle class="gaze-dot" cx="216" cy="201" r="5.5"></circle>
             </g>
-            <path
-              class="doodle-spark"
-              d="m676 416 8 18 19 7-19 8-8 18-8-18-19-8 19-7 8-18Z"
-            ></path>
+            <g class="gaze-tick">
+              <circle cx="303" cy="407" r="13"></circle>
+              <circle class="gaze-core" cx="303" cy="407" r="3.6"></circle>
+            </g>
           </svg>
         </div>
 
@@ -163,9 +166,10 @@
 
         <aside class="current-brief" aria-label="Current role">
           <svg class="brief-doodle" aria-hidden="true" viewBox="0 0 64 64">
-            <path d="M9 34c13-18 33-18 46 0-13 17-33 17-46 0Z"></path>
-            <circle cx="32" cy="34" r="7"></circle>
-            <path d="m15 15 5 8m12-11v9m15-6-5 8"></path>
+            <path d="M32 5a27 27 0 0 1 0 54"></path>
+            <path d="M32 15a17 17 0 0 0 0 34"></path>
+            <circle cx="32" cy="32" r="8.5"></circle>
+            <circle class="brief-doodle-core" cx="32" cy="32" r="2.8"></circle>
           </svg>
           <div class="brief-heading">
             <p>Current focus</p>
@@ -409,7 +413,8 @@
             <svg class="studio-doodle" aria-hidden="true" viewBox="0 0 130 92">
               <path d="M10 58c31-48 74-55 110-11M17 70c33-28 62-24 96 4"></path>
               <circle cx="28" cy="35" r="7"></circle>
-              <path d="m101 14 4 10 10 4-10 4-4 10-4-10-10-4 10-4 4-10Z"></path>
+              <circle cx="102" cy="20" r="8.5"></circle>
+              <circle cx="113" cy="29" r="8.5"></circle>
             </svg>
           </header>
 

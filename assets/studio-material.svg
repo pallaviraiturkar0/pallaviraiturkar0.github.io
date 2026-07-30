@@ -26,5 +26,5 @@
     <path d="M219 743c91 37 192 39 287-3 86-38 152-29 224 10" stroke-width="2"/>
   </g>
   <circle cx="141" cy="774" r="37" fill="#62f2c2"/>
-  <path d="m746 96 8 20 20 8-20 8-8 20-8-20-20-8 20-8 8-20Z" fill="none" stroke="#ff9fdc" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M714 62 736 118M748 56 770 112M782 62 804 118" fill="none" stroke="#ff9fdc" stroke-width="4" stroke-linecap="round"/>
 </svg>

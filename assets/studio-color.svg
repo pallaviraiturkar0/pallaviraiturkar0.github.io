@@ -16,6 +16,7 @@
   <circle cx="720" cy="398" r="284" fill="#f0a0ed" opacity=".88"/>
   <rect x="408" y="238" width="566" height="398" rx="199" fill="#0b1026" opacity=".78"/>
   <path d="M125 670c182-52 345 44 497 0 131-38 219-24 353 17" fill="none" stroke="#f4f6ff" stroke-width="4" stroke-linecap="round"/>
-  <path d="m882 127 10 23 24 9-24 10-10 23-10-23-24-10 24-9 10-23Z" fill="none" stroke="#f4f6ff" stroke-width="3"/>
+  <circle cx="874" cy="127" r="26" fill="none" stroke="#f4f6ff" stroke-width="3"/>
+  <circle cx="900" cy="139" r="26" fill="none" stroke="#f4f6ff" stroke-width="3"/>
   <text x="90" y="725" fill="#f4f6ff" font-family="Arial, sans-serif" font-size="18" letter-spacing="3">INTERFERENCE / 02</text>
 </svg>

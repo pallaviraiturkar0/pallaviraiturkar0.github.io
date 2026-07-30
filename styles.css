@@ -1238,16 +1238,48 @@
     transform-origin: 358px 132px;
   }
 
-  .doodle-eye,
-  .doodle-spark {
+  .gaze-cluster,
+  .gaze-tick {
     animation: doodle-float 8s ease-in-out infinite alternate;
     transform-origin: center;
   }
 
-  .doodle-spark {
-    fill: oklch(0.84 0.16 315 / 0.25) !important;
-    stroke: var(--iris) !important;
+  .gaze-tick {
+    animation-duration: 10s;
+    animation-direction: alternate-reverse;
   }
+
+  /* Gaze plot vocabulary: ring radius reads as dwell time, the filled core is
+     the fixation itself, and the dashed hop is the saccade between them. */
+  .signal-dwell {
+    stroke: oklch(0.83 0.16 183 / 0.42);
+    stroke-dasharray: 3 7;
+    fill: none;
+  }
+
+  .gaze-cluster .signal-dwell {
+    stroke: oklch(0.84 0.16 313 / 0.5);
+  }
+
+  .gaze-cluster circle,
+  .gaze-tick circle {
+    fill: oklch(0.13 0.03 278 / 0.28);
+    stroke: oklch(0.84 0.16 313 / 0.62);
+  }
+
+  /* Brief fixations read as solid dots; only the long dwell earns rings. */
+  .gaze-cluster .gaze-dot,
+  .gaze-tick .gaze-dot {
+    fill: oklch(0.84 0.16 313 / 0.72);
+    stroke: none;
+  }
+
+  .gaze-cluster .gaze-core,
+  .gaze-tick .gaze-core {
+    fill: var(--iris);
+    stroke: none;
+  }
+
 
   .hero-copy {
     position: relative;
@@ -1338,6 +1370,11 @@
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+  }
+
+  .brief-doodle-core {
+    fill: currentcolor;
+    stroke: none;
   }
 
   .brief-signal span {
@@ -1793,8 +1830,8 @@
     .hero-aurora,
     .signal-path,
     .signal-point-two,
-    .doodle-eye,
-    .doodle-spark,
+    .gaze-cluster,
+    .gaze-tick,
     .nav-contact,
     .button-primary,
     .research-section::before,

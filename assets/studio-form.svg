@@ -20,9 +20,9 @@
     <path d="M240 977C182 758 268 472 454 352c124-80 209-15 178 94-35 123-178 170-226 267-48 99 0 188 100 242" opacity=".72"/>
     <path d="M307 987C263 812 327 583 469 476c88-67 142-22 108 59-42 101-129 148-154 225-27 82 13 147 93 188" opacity=".58"/>
   </g>
-  <path d="M655 183c23-25 59-25 82 0-23 25-59 25-82 0Z" fill="none" stroke="#f5a0e6" stroke-width="4"/>
+  <circle cx="696" cy="183" r="41" fill="none" stroke="#f5a0e6" stroke-width="4"/>
+  <circle cx="696" cy="183" r="23" fill="none" stroke="#f5a0e6" stroke-width="4" stroke-dasharray="9 12"/>
   <circle cx="696" cy="183" r="10" fill="#ff9f85"/>
-  <path d="m669 149-8-14m25 7-1-17m20 18 8-14m12 29 13-9" fill="none" stroke="#f5a0e6" stroke-width="4" stroke-linecap="round"/>
   <circle cx="205" cy="1010" r="12" fill="#f2f5ff"/>
   <path d="M92 89h248" stroke="#f2f5ff" stroke-width="2"/>
   <text x="92" y="78" fill="#f2f5ff" font-family="Arial, sans-serif" font-size="18" letter-spacing="3">CONTOUR / 01</text>

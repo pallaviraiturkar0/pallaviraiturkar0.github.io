@@ -150,6 +150,8 @@ The palette combines a violet-tinted near-black workspace with a five-stop signa
 
 **The Doodle Has Meaning Rule.** Every hand-drawn mark maps to perception, attention, connection, layers, or making. No generic squiggles are added only to fill space.
 
+**The Gaze Plot Rule.** The hero decoration speaks one vocabulary borrowed from real eye-tracking output: dashed scanpaths, fixations that sit on those paths, and ring radius that encodes dwell time. A brief fixation is a solid dot; a long dwell earns a dashed dwell ring and a filled core. Literal illustrations of an eye, crosshair calibration targets, and four-point sparkles are prohibited — they read as clip art or as generic UI affordances and break the abstraction. Marks stay clear of the focus card so no decoration crosses body copy.
+
 **The Alpha Overlay Rule.** Glows, aurora fields, hover washes, and hairlines are expressed as alpha derivations of the named palette hues rather than as new opaque colors. A derived value must keep its parent's hue family: mint near 184, blue near 250, violet near 286, iris near 313, coral near 25, and the violet-tinted neutrals near 255-280. Chroma and lightness may shift to describe light passing through a surface; inventing a hue outside these families is drift, not composition.
 
 ## Typography
