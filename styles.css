@@ -1985,3 +1985,28 @@
   will-change: transform;
   backface-visibility: hidden;
 }
+
+/* Footer credit ----------------------------------------------------------- */
+
+.footer-copilot {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  color: var(--color-ink-light);
+  text-decoration-color: oklch(1 0 0 / 0.25);
+  text-underline-offset: 0.25em;
+  transition: color var(--duration-fast) var(--ease-out-quart);
+}
+
+.footer-copilot:hover,
+.footer-copilot:focus-visible {
+  color: var(--iris);
+  text-decoration-color: currentColor;
+}
+
+.copilot-mark {
+  inline-size: 1.05em;
+  block-size: 1.05em;
+  fill: currentColor;
+  translate: 0 0.06em;
+}
