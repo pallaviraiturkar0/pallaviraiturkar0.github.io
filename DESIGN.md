@@ -22,9 +22,9 @@ No accent color: the artwork provides the color.
 ## Layout
 
 - Single column, max width 64rem, fluid side padding `clamp(1.5rem, 5vw, 4rem)`.
-- Right-aligned top nav: Work, Research, Off-screen, Contact.
+- Right-aligned top nav: Work, Research, Projects, Off-screen, Contact.
 - Hero: pixel portrait beside the name and one-line role.
-- Sections (Work, Research, Off-screen, Contact) are lists of rows separated by 1px rules: title + right-aligned meta, then description and stack.
+- Sections (Work, Research, Projects, Off-screen, Contact) are lists of rows separated by 1px rules: title + right-aligned meta, then description and stack.
 - At >=860px each section becomes a two-column grid: 12rem heading column, content column.
 - At <=600px the hero stacks, the portrait shrinks, and the gallery drops to two columns.
 
@@ -32,6 +32,9 @@ No accent color: the artwork provides the color.
 
 - **Pixel portrait:** a `<canvas>` that fills in `pallavi-pixel.png` as a 64x64 grid of randomly ordered cells over ~1.4s, then draws the full image. Reduced motion draws it immediately.
 - **Publication rows:** title links to DOI/ACM with an arrow; year as meta.
+- **Work rows:** a small company mark (GitHub mark, Walmart spark) before the title and a quiet line of underlined links below the stack.
+- **Projects:** two 16:10 media tiles (looping muted Blobby video, Pup Quest poster) in `projects/`, each with a short line and GitHub/Play links.
+- **Footer:** copyright left, "Made with ♥ and pixels" right with a small pixel-art heart.
 - **Gallery (Off-screen):** 3-column grid (2 on mobile) of 4:5 WebP images in `art/`. The first 9 show; a "Show all 31" text button reveals the rest. Hover/focus reveals a caption (title + optional note) over a bottom gradient; captions are hidden on touch devices.
 - **Lightbox:** native `<dialog>` with close/prev/next buttons, arrow-key navigation, and backdrop click to close. Caption shows "title — note".
 

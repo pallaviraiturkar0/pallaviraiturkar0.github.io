@@ -45,6 +45,11 @@
   .row p { grid-column: 1 / -1; color: var(--soft); font-size: .95rem; }
   .row .stack { grid-column: 1 / -1; color: var(--faint); font-size: .825rem; }
   .row a.pub { font-weight: 400; }
+  .row h3 { display: flex; align-items: center; gap: .55rem; }
+  .logo { width: 1.05rem; height: 1.05rem; flex: none; }
+  .row .links { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: .15rem 1.25rem; margin-top: .35rem; font-size: .85rem; color: var(--soft); }
+  .row .links a { text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
+  .row .links a:hover { color: var(--ink); text-decoration-color: currentColor; }
 
   .intro { color: var(--soft); margin-bottom: 1.25rem; }
   .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; }
@@ -70,8 +75,20 @@
   .lb-btn:hover { color: var(--ink); }
   .lb-close { top: .5rem; right: .5rem; } .lb-prev { left: .5rem; top: 50%; translate: 0 -50%; } .lb-next { right: .5rem; top: 50%; translate: 0 -50%; }
 
+  .projects { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 1rem; }
+  .projects .media { display: block; aspect-ratio: 16 / 10; overflow: hidden; border-radius: .5rem; background: #f2efe9; }
+  .projects .media img, .projects .media video { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .5s cubic-bezier(.2,.7,.2,1); }
+  .projects .media:hover img, .projects .media:hover video { transform: scale(1.02); }
+  .projects h3 { font-weight: 500; font-size: 1.05rem; margin-top: .75rem; }
+  .projects p { color: var(--soft); font-size: .95rem; }
+  .projects .stack { color: var(--faint); font-size: .825rem; }
+  .projects .stack a { color: var(--soft); }
+  @media (prefers-reduced-motion: reduce) { .projects .media img, .projects .media video { transition: none; } }
+
   .contact { display: flex; flex-wrap: wrap; gap: .5rem 1.75rem; }
-  footer { padding: 6rem 0 2.5rem; font-size: .8rem; color: var(--faint); }
+  footer { padding: 6rem 0 2.5rem; font-size: .8rem; color: var(--faint); display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; }
+  .made { display: inline-flex; align-items: center; gap: .35rem; }
+  .heart { width: .85rem; height: auto; image-rendering: pixelated; }
 
   @media (min-width: 860px) {
     section { display: grid; grid-template-columns: 12rem minmax(0, 1fr); column-gap: 3rem; padding-top: 5rem; }
@@ -88,13 +105,15 @@
     .portrait { width: 7rem; border-radius: 1.1rem; }
     .gallery { grid-template-columns: repeat(2, 1fr); }
     .gallery.collapsed li:nth-child(9) { display: none; }
+    .projects { grid-template-columns: 1fr; }
+    header nav { gap: 1rem; font-size: .85rem; }
   }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <nav aria-label="Primary"><a href="#work">Work</a><a href="#research">Research</a><a href="#off-screen">Off-screen</a><a href="#contact">Contact</a></nav>
+    <nav aria-label="Primary"><a href="#work">Work</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#off-screen">Off-screen</a><a href="#contact">Contact</a></nav>
   </header>
 
   <main>
@@ -108,9 +127,9 @@
 
     <section id="work">
       <h2>Work</h2>
-      <div class="row"><h3>Copilot Agents</h3><span class="meta">GitHub · 2025–</span><p>Building agent experiences, the agent platform, and Copilot across client surfaces, including Copilot Chat on GitHub.com.</p><span class="stack">Go · Ruby · Python · React · KQL</span></div>
-      <div class="row"><h3>Enterprise AI Agents</h3><span class="meta">Walmart · 2024–25</span><p>Built multi-agent systems over enterprise data: text-to-SQL, planning, and recommendation agents, RAG and GraphRAG pipelines, and the serving and evaluation infrastructure behind them.</p><span class="stack">Python · SQL</span></div>
-      <div class="row"><h3>Global Integrated Fulfillment</h3><span class="meta">Walmart · 2019–24</span><p>Full-stack engineering on the platform behind Walmart’s online grocery, from order placement and optimized picking to curbside pickup and delivery. Applied ML to fulfillment analytics and built internal developer tools.</p><span class="stack">Python · Java · SQL · React</span></div>
+      <div class="row"><h3><svg class="logo" viewBox="0 0 16 16" aria-hidden="true"><path fill="#161616" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>Copilot Agents</h3><span class="meta">GitHub · 2025–</span><p>Building agent experiences, the agent platform, and Copilot across client surfaces, including Copilot Chat on GitHub.com.</p><span class="stack">Go · Ruby · Python · React · KQL</span><span class="links"><a href="https://github.com/features/copilot">Try GitHub Copilot ↗</a><a href="https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/">Copilot app ↗</a><a href="https://github.com/orgs/community/discussions/211011">Copilot cloud experience ↗</a></span></div>
+      <div class="row"><h3><svg class="logo" viewBox="-10 -10 20 20" aria-hidden="true"><g fill="#ffc220"><rect x="-1.15" y="-9" width="2.3" height="5.6" rx="1.15" transform="rotate(0)"/><rect x="-1.15" y="-9" width="2.3" height="5.6" rx="1.15" transform="rotate(60)"/><rect x="-1.15" y="-9" width="2.3" height="5.6" rx="1.15" transform="rotate(120)"/><rect x="-1.15" y="-9" width="2.3" height="5.6" rx="1.15" transform="rotate(180)"/><rect x="-1.15" y="-9" width="2.3" height="5.6" rx="1.15" transform="rotate(240)"/><rect x="-1.15" y="-9" width="2.3" height="5.6" rx="1.15" transform="rotate(300)"/></g></svg>My Assistant &amp; Enterprise Agents</h3><span class="meta">Walmart · 2024–25</span><p>Worked on My Assistant, Walmart’s associate GenAI tool, the enterprise agents and RAG platform, and business agents: text-to-SQL, planning, and recommendation agents, RAG and GraphRAG pipelines, and the serving and evaluation infrastructure behind them.</p><span class="stack">Python · SQL</span><span class="links"><a href="https://corporate.walmart.com/news/2024/01/09/walmarts-expanding-one-of-a-kind-associate-genai-tool-to-11-countries-in-2024">Walmart’s associate GenAI tool ↗</a></span></div>
+      <div class="row"><h3><svg class="logo" viewBox="-10 -10 20 20" aria-hidden="true"><g fill="#ffc220"><rect x="-1.15" y="-9" width="2.3" height="5.6" rx="1.15" transform="rotate(0)"/><rect x="-1.15" y="-9" width="2.3" height="5.6" rx="1.15" transform="rotate(60)"/><rect x="-1.15" y="-9" width="2.3" height="5.6" rx="1.15" transform="rotate(120)"/><rect x="-1.15" y="-9" width="2.3" height="5.6" rx="1.15" transform="rotate(180)"/><rect x="-1.15" y="-9" width="2.3" height="5.6" rx="1.15" transform="rotate(240)"/><rect x="-1.15" y="-9" width="2.3" height="5.6" rx="1.15" transform="rotate(300)"/></g></svg>Global Integrated Fulfillment</h3><span class="meta">Walmart · 2019–24</span><p>Full-stack engineering on the platform behind Walmart’s online grocery, from order placement and optimized picking to curbside pickup and delivery. Applied ML to fulfillment analytics and built internal developer tools.</p><span class="stack">Python · Java · SQL · React</span><span class="links"><a href="https://www.massmart.co.za/news/2023/05/massmarts-latest-walmart-inspired-technology-launch-set-to-impro">GIF launch at Massmart ↗</a><a href="https://www.itweb.co.za/article/walmart-sa-app-powered-by-global-fulfilment-platform/6GxRKqYQnlAqb3Wj">Walmart SA app ↗</a></span></div>
     </section>
 
     <section id="research">
@@ -122,6 +141,25 @@
       <div class="row"><a class="pub" href="https://dl.acm.org/doi/10.1145/2931002.2931009">Decoupling Light Reflex from Pupillary Dilation to Measure Emotional Arousal in Videos ↗</a><span class="meta">2016</span></div>
       <div class="row"><a class="pub" href="https://dl.acm.org/doi/10.1145/2931002.2931016">Scan Path and Movie Trailers for Implicit Annotation of Videos ↗</a><span class="meta">2016</span></div>
       <div class="row"><a class="pub" href="https://dl.acm.org/doi/10.1145/2931002.2948723">Measuring Viewers’ Heart Rate Response to Environment Conservation Videos ↗</a><span class="meta">2016</span></div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p class="intro">Small things I vibe coded for fun, with Copilot.</p>
+      <ul class="projects">
+        <li>
+          <a class="media" href="https://github.com/pallaviraiturkar0/blobby" aria-label="Blobby on GitHub"><video src="projects/blobby.mp4" poster="projects/blobby.webp" autoplay muted loop playsinline width="800" height="450"></video></a>
+          <h3>Blobby</h3>
+          <p>A tiny desktop pet for macOS that keeps you focused.</p>
+          <span class="stack">Lua · Hammerspoon · <a href="https://github.com/pallaviraiturkar0/blobby">GitHub ↗</a></span>
+        </li>
+        <li>
+          <a class="media" href="https://pallaviraiturkar0.github.io/pup-quest/" aria-label="Play Pup Quest"><img src="projects/pupquest.webp" alt="Pup Quest start screen: a pixel corgi in a meadow" width="800" height="500" loading="lazy" decoding="async"></a>
+          <h3>Pup Quest</h3>
+          <p>A pixel-art puppy platformer you can play in the browser.</p>
+          <span class="stack">JavaScript · <a href="https://pallaviraiturkar0.github.io/pup-quest/">Play ↗</a> · <a href="https://github.com/pallaviraiturkar0/pup-quest">GitHub ↗</a></span>
+        </li>
+      </ul>
     </section>
 
     <section id="off-screen">
@@ -173,7 +211,7 @@
     </section>
   </main>
 
-  <footer>© 2026 Pallavi Raiturkar</footer>
+  <footer><span>© 2026 Pallavi Raiturkar</span><span class="made">Made with <svg class="heart" viewBox="0 0 7 6" shape-rendering="crispEdges" role="img" aria-label="love"><g fill="#d9534f"><rect x="1" y="0" width="1" height="1"/><rect x="2" y="0" width="1" height="1"/><rect x="4" y="0" width="1" height="1"/><rect x="5" y="0" width="1" height="1"/><rect x="0" y="1" width="1" height="1"/><rect x="1" y="1" width="1" height="1"/><rect x="2" y="1" width="1" height="1"/><rect x="3" y="1" width="1" height="1"/><rect x="4" y="1" width="1" height="1"/><rect x="5" y="1" width="1" height="1"/><rect x="6" y="1" width="1" height="1"/><rect x="0" y="2" width="1" height="1"/><rect x="1" y="2" width="1" height="1"/><rect x="2" y="2" width="1" height="1"/><rect x="3" y="2" width="1" height="1"/><rect x="4" y="2" width="1" height="1"/><rect x="5" y="2" width="1" height="1"/><rect x="6" y="2" width="1" height="1"/><rect x="1" y="3" width="1" height="1"/><rect x="2" y="3" width="1" height="1"/><rect x="3" y="3" width="1" height="1"/><rect x="4" y="3" width="1" height="1"/><rect x="5" y="3" width="1" height="1"/><rect x="2" y="4" width="1" height="1"/><rect x="3" y="4" width="1" height="1"/><rect x="4" y="4" width="1" height="1"/><rect x="3" y="5" width="1" height="1"/></g></svg> and pixels</span></footer>
 </div>
 
 <script>
@@ -228,6 +266,19 @@
     dlg.querySelector('.lb-next').onclick = () => show(i + 1);
     dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
     dlg.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') show(i - 1); if (e.key === 'ArrowRight') show(i + 1); });
+  })();
+  (() => {
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    document.querySelectorAll('.projects video').forEach(v => {
+      if (reduce) { v.removeAttribute('autoplay'); v.pause(); return; }
+      v.muted = true;
+      const go = () => v.play().catch(() => {});
+      new IntersectionObserver(es => es.some(e => e.isIntersecting) && go()).observe(v);
+      v.addEventListener('canplay', go);
+      v.parentElement.addEventListener('pointerenter', go);
+      ['pointerdown', 'keydown', 'touchstart', 'wheel'].forEach(t => addEventListener(t, go, { once: true, passive: true }));
+      document.addEventListener('visibilitychange', () => !document.hidden && go());
+    });
   })();
 </script>
 </body>
