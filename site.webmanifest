@@ -4,8 +4,8 @@
   "description": "Pallavi Raiturkar — Staff Software Engineer building GitHub Copilot.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0b0d1c",
-  "theme_color": "#0b0d1c",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "/assets/favicon.svg",

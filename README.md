@@ -18,7 +18,6 @@ The site is designed for GitHub Pages and deploys from the root of the `main` br
 
 ## Editing
 
-- Page content: `index.html`
-- Visual system and responsive behavior: `styles.css`
-- Canvas and interaction behavior: `script.js`
+- Page content, styles, and scripts: `index.html` (single self-contained file)
+- Studio artwork: `art/` (WebP, 1200x1500); pixel portrait source: `pallavi-pixel.png`
 - Product and design context: `PRODUCT.md` and `DESIGN.md`

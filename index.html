@@ -1,489 +1,234 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0b0d1c">
-    <meta name="color-scheme" content="dark">
-    <title>Pallavi Raiturkar | Staff Software Engineer</title>
-    <meta
-      name="description"
-      content="Pallavi Raiturkar builds software around how people actually behave, from eye-tracking research to full-stack engineering to AI systems. Currently technical lead for Copilot Chat at GitHub."
-    >
-    <meta name="author" content="Pallavi Raiturkar">
-    <link rel="canonical" href="https://pallaviraiturkar0.github.io/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pallavi Raiturkar</title>
+<meta name="description" content="Staff Software Engineer at GitHub, building Copilot Agents.">
+<meta name="author" content="Pallavi Raiturkar">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://pallaviraiturkar0.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pallaviraiturkar0.github.io/">
+<meta property="og:title" content="Pallavi Raiturkar">
+<meta property="og:description" content="Staff Software Engineer at GitHub, building Copilot Agents.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico">
+<link rel="manifest" href="/site.webmanifest">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --ink: #161616; --soft: #5c5c5c; --faint: #9a9a9a; --line: #ececec; --hand: "Caveat", cursive; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: "Schibsted Grotesk", system-ui, sans-serif; background: #fff; color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 2px; }
+  .wrap { max-width: 64rem; margin: 0 auto; padding: 0 clamp(1.5rem, 5vw, 4rem); }
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pallaviraiturkar0.github.io/">
-    <meta property="og:title" content="Pallavi Raiturkar | Staff Software Engineer">
-    <meta
-      property="og:description"
-      content="From eye-tracking research to full-stack engineering to AI systems. I build around how people actually behave."
-    >
-    <meta property="og:image" content="https://pallaviraiturkar0.github.io/assets/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Pallavi Raiturkar - engineer, researcher, maker">
+  header { display: flex; justify-content: flex-end; padding: 1.5rem 0; }
+  header nav { display: flex; gap: 1.5rem; font-size: .9rem; color: var(--soft); }
+  header nav a { padding: .5rem 0; }
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pallavi Raiturkar | Staff Software Engineer">
-    <meta
-      name="twitter:description"
-      content="From eye-tracking research to full-stack engineering to AI systems. I build around how people actually behave."
-    >
-    <meta name="twitter:image" content="https://pallaviraiturkar0.github.io/assets/og-image.png">
+  .hero { padding: 3.5rem 0 1rem; display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: center; }
+  .hero h1 { font-family: var(--hand); font-weight: 400; font-size: clamp(3.25rem, 8vw, 4.75rem); line-height: .95; }
+  .hero p { margin-top: .6rem; color: var(--soft); font-size: 1rem; white-space: nowrap; }
+  .portrait { width: 9.5rem; aspect-ratio: 1; border-radius: 1.5rem; image-rendering: pixelated; background: #f3f3f3; display: block; }
 
-    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-    <link rel="alternate icon" href="/favicon.ico">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Geologica:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    >
-    <link rel="stylesheet" href="/styles.css">
-    <script src="/script.js" defer></script>
+  section { padding-top: 4rem; }
+  h2 { font-family: var(--hand); font-weight: 400; font-size: 2.4rem; line-height: 1; margin-bottom: 1.25rem; }
+  .row { display: grid; grid-template-columns: 1fr auto; gap: .15rem 1.5rem; padding: 1rem 0; border-top: 1px solid var(--line); }
+  .row:last-child { border-bottom: 1px solid var(--line); }
+  .row h3 { font-weight: 500; font-size: 1.05rem; }
+  .row .meta { color: var(--faint); font-size: .875rem; text-align: right; }
+  .row p { grid-column: 1 / -1; color: var(--soft); font-size: .95rem; }
+  .row .stack { grid-column: 1 / -1; color: var(--faint); font-size: .825rem; }
+  .row a.pub { font-weight: 400; }
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Pallavi Raiturkar",
-        "url": "https://pallaviraiturkar0.github.io/",
-        "sameAs": [
-          "https://github.com/pallaviraiturkar0",
-          "https://www.linkedin.com/in/pallaviraiturkar"
-        ],
-        "jobTitle": "Staff Software Engineer",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "GitHub"
-        },
-        "alumniOf": {
-          "@type": "CollegeOrUniversity",
-          "name": "University of Florida"
-        }
-      }
-    </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
+  .intro { color: var(--soft); margin-bottom: 1.25rem; }
+  .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; }
+  .gallery { list-style: none; }
+  .gallery button { display: block; width: 100%; padding: 0; border: 0; background: #f2efe9; border-radius: .5rem; overflow: hidden; cursor: zoom-in; }
+  .gallery img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; transition: transform .5s cubic-bezier(.2,.7,.2,1); }
+  .gallery button { position: relative; text-align: left; }
+  .gallery button:hover img { transform: scale(1.02); }
+  .cap { position: absolute; inset: auto 0 0 0; display: grid; gap: .1rem; padding: 2.5rem .9rem .8rem; color: #fff; font-size: .85rem; line-height: 1.35; background: linear-gradient(transparent, rgba(0,0,0,.6)); opacity: 0; translate: 0 .35rem; transition: opacity .25s ease, translate .25s ease; pointer-events: none; }
+  .cap b { font-weight: 500; } .cap i { font-style: normal; opacity: .85; }
+  .gallery button:hover .cap, .gallery button:focus-visible .cap { opacity: 1; translate: 0 0; }
+  @media (hover: none) { .cap { display: none; } }
+  @media (prefers-reduced-motion: reduce) { .cap, .gallery img { transition: none; } }
+  .gallery button:focus-visible, .more:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+  .more { justify-self: start; margin-top: 1.25rem; font: inherit; font-size: .9rem; color: var(--soft); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  .more:hover { color: var(--ink); }
+  .lightbox { margin: auto; padding: 0; border: 0; background: transparent; max-width: 100vw; max-height: 100vh; }
+  .lightbox::backdrop { background: rgba(250,249,246,.97); }
+  .lightbox figure { display: grid; justify-items: center; gap: .75rem; }
+  .lightbox img { max-width: min(92vw, 60rem); max-height: 84vh; width: auto; height: auto; border-radius: .5rem; }
+  .lightbox figcaption { color: var(--soft); font-size: .9rem; }
+  .lb-btn { position: fixed; font: inherit; font-size: 1.5rem; line-height: 1; color: var(--soft); background: none; border: 0; padding: 1rem; cursor: pointer; }
+  .lb-btn:hover { color: var(--ink); }
+  .lb-close { top: .5rem; right: .5rem; } .lb-prev { left: .5rem; top: 50%; translate: 0 -50%; } .lb-next { right: .5rem; top: 50%; translate: 0 -50%; }
 
-    <header class="site-header">
-      <div class="nav-shell">
-        <a class="wordmark" href="#top" aria-label="Pallavi Raiturkar, home">
-          <span class="wordmark-mark" aria-hidden="true">PR</span>
-          <span class="wordmark-name">Pallavi Raiturkar</span>
-        </a>
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="primary-nav"
-        >
-          <span class="nav-toggle-glyph" aria-hidden="true">
-            <svg viewBox="0 0 26 18" fill="none" aria-hidden="true">
-              <path class="nav-toggle-top" d="M2 4.4c6.6-1.4 15.4-1.4 22 0" />
-              <path class="nav-toggle-mid" d="M2 9c6.6-1.2 15.4-1.2 22 0" />
-              <path class="nav-toggle-bot" d="M2 13.6c6.6-1.4 15.4-1.4 22 0" />
-            </svg>
-          </span>
-          <span class="nav-toggle-label">Menu</span>
-        </button>
-        <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
-          <a href="#work">Work</a>
-          <a href="#research">Research</a>
-          <a href="#studio">Studio</a>
-          <a class="nav-contact" href="#contact">Contact</a>
-        </nav>
+  .contact { display: flex; flex-wrap: wrap; gap: .5rem 1.75rem; }
+  footer { padding: 6rem 0 2.5rem; font-size: .8rem; color: var(--faint); }
+
+  @media (min-width: 860px) {
+    section { display: grid; grid-template-columns: 12rem minmax(0, 1fr); column-gap: 3rem; padding-top: 5rem; }
+    section > h2 { margin: 0; padding-top: .75rem; }
+    section > :not(h2) { grid-column: 2; }
+    .hero { padding-top: 5rem; gap: 2.5rem; }
+    .portrait { width: 11rem; }
+    .gallery { gap: .75rem; }
+  }
+
+  @media (max-width: 600px) {
+    .hero { grid-template-columns: 1fr; gap: 1.25rem; padding-top: 1.5rem; }
+    .hero p { white-space: normal; }
+    .portrait { width: 7rem; border-radius: 1.1rem; }
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+    .gallery.collapsed li:nth-child(9) { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <nav aria-label="Primary"><a href="#work">Work</a><a href="#research">Research</a><a href="#off-screen">Off-screen</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <canvas class="portrait" id="portrait" width="512" height="512" role="img" aria-label="Pixel-art portrait of Pallavi"></canvas>
+      <div>
+        <h1>Pallavi Raiturkar</h1>
+        <p>Staff Software Engineer at GitHub, building Copilot Agents.</p>
       </div>
-    </header>
+    </div>
 
-    <main id="main-content" tabindex="-1">
-      <section class="hero shell" id="top" aria-labelledby="hero-title">
-        <div class="hero-field" aria-hidden="true">
-          <div class="hero-aurora"></div>
-          <svg class="signal-map" viewBox="0 0 760 620" role="presentation">
-            <path
-              class="signal-path signal-path-main"
-              d="M72 474C146 340 180 142 358 132c150-9 132 178 256 207 41 10 76-6 103-31"
-            ></path>
-            <path
-              class="signal-path signal-path-echo"
-              d="M101 519c83-94 147-128 243-105 85 20 139 1 192-73"
-            ></path>
-            <g class="signal-point signal-point-one">
-              <circle cx="77" cy="466" r="17"></circle>
-              <circle cx="77" cy="466" r="4"></circle>
-            </g>
-            <g class="signal-point signal-point-two">
-              <circle cx="358" cy="132" r="25"></circle>
-              <circle class="signal-dwell" cx="358" cy="132" r="14.5"></circle>
-              <circle cx="358" cy="132" r="4.5"></circle>
-            </g>
-            <g class="gaze-cluster">
-              <circle class="gaze-dot" cx="143" cy="320" r="5"></circle>
-              <circle cx="176" cy="257" r="14"></circle>
-              <circle class="signal-dwell" cx="176" cy="257" r="7.6"></circle>
-              <circle class="gaze-core" cx="176" cy="257" r="3.6"></circle>
-              <circle class="gaze-dot" cx="216" cy="201" r="5.5"></circle>
-            </g>
-            <g class="gaze-tick">
-              <circle cx="303" cy="407" r="13"></circle>
-              <circle class="gaze-core" cx="303" cy="407" r="3.6"></circle>
-            </g>
-          </svg>
-        </div>
+    <section id="work">
+      <h2>Work</h2>
+      <div class="row"><h3>Copilot Agents</h3><span class="meta">GitHub · 2025–</span><p>Building agent experiences, the agent platform, and Copilot across client surfaces, including Copilot Chat on GitHub.com.</p><span class="stack">Go · Ruby · Python · React · KQL</span></div>
+      <div class="row"><h3>Enterprise AI Agents</h3><span class="meta">Walmart · 2024–25</span><p>Built multi-agent systems over enterprise data: text-to-SQL, planning, and recommendation agents, RAG and GraphRAG pipelines, and the serving and evaluation infrastructure behind them.</p><span class="stack">Python · SQL</span></div>
+      <div class="row"><h3>Global Integrated Fulfillment</h3><span class="meta">Walmart · 2019–24</span><p>Full-stack engineering on the platform behind Walmart’s online grocery, from order placement and optimized picking to curbside pickup and delivery. Applied ML to fulfillment analytics and built internal developer tools.</p><span class="stack">Python · Java · SQL · React</span></div>
+    </section>
 
-        <div class="hero-copy">
-          <p class="hero-role">
-            <span aria-hidden="true"></span>
-            Staff Software Engineer · GitHub
-          </p>
-          <h1 id="hero-title">Pallavi Raiturkar</h1>
-          <p class="hero-intro">
-            I started in eye-tracking research, spent five years in full-stack engineering, moved
-            into AI systems, and now lead technical work on Copilot Chat at GitHub. Across all of
-            it I have built the same way: pay attention to what people actually do, then design
-            for that.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">
-              View selected work
-              <svg aria-hidden="true" viewBox="0 0 20 20">
-                <path d="M10 3v13M5 11l5 5 5-5"></path>
-              </svg>
-            </a>
-            <a class="button button-secondary" href="mailto:pallavi.raiturkar0@gmail.com">
-              Email me
-              <svg aria-hidden="true" viewBox="0 0 20 20">
-                <path d="M3 5h14v10H3zM3 6l7 5 7-5"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
+    <section id="research">
+      <h2>Research</h2>
+      <p class="intro">Eye tracking and perception, University of Florida, 2015–2019.</p>
+      <div class="row"><a class="pub" href="https://doi.org/10.1142/S1793351X19400183">A Benchmark of Four Methods for Generating 360° Saliency Maps from Eye Tracking Data ↗</a><span class="meta">2019</span></div>
+      <div class="row"><a class="pub" href="https://doi.org/10.1080/08941920.2018.1556760">Using Audience Physiology to Assess Conservation Messages and Animal Taxa ↗</a><span class="meta">2019</span></div>
+      <div class="row"><a class="pub" href="https://dl.acm.org/doi/10.1145/3281505.3281538">An Evaluation of Pupillary Light Response Models for 2D Screens and VR HMDs ↗</a><span class="meta">2018</span></div>
+      <div class="row"><a class="pub" href="https://dl.acm.org/doi/10.1145/2931002.2931009">Decoupling Light Reflex from Pupillary Dilation to Measure Emotional Arousal in Videos ↗</a><span class="meta">2016</span></div>
+      <div class="row"><a class="pub" href="https://dl.acm.org/doi/10.1145/2931002.2931016">Scan Path and Movie Trailers for Implicit Annotation of Videos ↗</a><span class="meta">2016</span></div>
+      <div class="row"><a class="pub" href="https://dl.acm.org/doi/10.1145/2931002.2948723">Measuring Viewers’ Heart Rate Response to Environment Conservation Videos ↗</a><span class="meta">2016</span></div>
+    </section>
 
-        <aside class="current-brief" aria-label="Current role">
-          <svg class="brief-doodle" aria-hidden="true" viewBox="0 0 64 64">
-            <path d="M32 5a27 27 0 0 1 0 54"></path>
-            <path d="M32 15a17 17 0 0 0 0 34"></path>
-            <circle cx="32" cy="32" r="8.5"></circle>
-            <circle class="brief-doodle-core" cx="32" cy="32" r="2.8"></circle>
-          </svg>
-          <div class="brief-heading">
-            <p>Current focus</p>
-            <span>GitHub · 2025–Now</span>
-          </div>
-          <p class="brief-title">Copilot Chat on GitHub.com</p>
-          <ul>
-            <li>Architecture and platform evolution</li>
-            <li>Quality and offline evaluation</li>
-            <li>Performance and production telemetry</li>
-            <li>Agent skills and developer workflows</li>
-          </ul>
-          <div class="brief-signal" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </aside>
-      </section>
+    <section id="off-screen">
+      <h2>Off-screen</h2>
+      <p class="intro">Painting, sketching, crafts.</p>
+      <ul class="gallery collapsed" id="gallery">
+        <li><button type="button" data-src="art/01-C6757E9B.webp"><img src="art/01-C6757E9B.webp" alt="Monkey in the jungle, acrylic" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Monkey in the jungle, acrylic</b></span></button></li>
+        <li><button type="button" data-src="art/02-maximalism-set.webp"><img src="art/02-maximalism-set.webp" alt="Indian maximalism, set of six" data-note="Cranes, tiger, elephant, monkey, cheetah, peacock." width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Indian maximalism, set of six</b><i>Cranes, tiger, elephant, monkey, cheetah, peacock.</i></span></button></li>
+        <li><button type="button" data-src="art/03-66B34FFB.webp"><img src="art/03-66B34FFB.webp" alt="Elephant, Madhubani" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Elephant, Madhubani</b></span></button></li>
+        <li><button type="button" data-src="art/05-DCC30D35.webp"><img src="art/05-DCC30D35.webp" alt="Three women, triptych" data-note="Cartoon portraits over kolam." width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Three women, triptych</b><i>Cartoon portraits over kolam.</i></span></button></li>
+        <li><button type="button" data-src="art/06-44C50E72.webp"><img src="art/06-44C50E72.webp" alt="Blue room, acrylic" data-note="Van Gogh colors, palette knife only." width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Blue room, acrylic</b><i>Van Gogh colors, palette knife only.</i></span></button></li>
+        <li><button type="button" data-src="art/08-IMG_5738.webp"><img src="art/08-IMG_5738.webp" alt="Kitchen boards" data-note="Acrylic on wood, made for the kitchen." width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Kitchen boards</b><i>Acrylic on wood, made for the kitchen.</i></span></button></li>
+        <li><button type="button" data-src="art/09-6B493329.webp"><img src="art/09-6B493329.webp" alt="Boxer, acrylic" data-note="Palette knife." width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Boxer, acrylic</b><i>Palette knife.</i></span></button></li>
+        <li><button type="button" data-src="art/11-BC597613.webp"><img src="art/11-BC597613.webp" alt="Waterfall at sunset, acrylic" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Waterfall at sunset, acrylic</b></span></button></li>
+        <li><button type="button" data-src="art/12-IMG_9403.webp"><img src="art/12-IMG_9403.webp" alt="Shiva, palette knife" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Shiva, palette knife</b></span></button></li>
+        <li hidden><button type="button" data-src="art/14-2997036B.webp"><img src="art/14-2997036B.webp" alt="Butterfly, bead art" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Butterfly, bead art</b></span></button></li>
+        <li hidden><button type="button" data-src="art/15-IMG_3419.webp"><img src="art/15-IMG_3419.webp" alt="Fire, fluid pour" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Fire, fluid pour</b></span></button></li>
+        <li hidden><button type="button" data-src="art/17-IMG_9354.webp"><img src="art/17-IMG_9354.webp" alt="Double exposure" data-note="Ink printing on acrylic." width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Double exposure</b><i>Ink printing on acrylic.</i></span></button></li>
+        <li hidden><button type="button" data-src="art/18-C0FEA294.webp"><img src="art/18-C0FEA294.webp" alt="Palms at sunset, pastel" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Palms at sunset, pastel</b></span></button></li>
+        <li hidden><button type="button" data-src="art/19-IMG_3374.webp"><img src="art/19-IMG_3374.webp" alt="Green tide, fluid pour" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Green tide, fluid pour</b></span></button></li>
+        <li hidden><button type="button" data-src="art/20-IMG_9355.webp"><img src="art/20-IMG_9355.webp" alt="Phoenix, acrylic" data-note="Painted with my fingers." width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Phoenix, acrylic</b><i>Painted with my fingers.</i></span></button></li>
+        <li hidden><button type="button" data-src="art/21-IMG_5819.webp"><img src="art/21-IMG_5819.webp" alt="Warli panel" data-note="Acrylic texture on wood." width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Warli panel</b><i>Acrylic texture on wood.</i></span></button></li>
+        <li hidden><button type="button" data-src="art/22-IMG_3282.webp"><img src="art/22-IMG_3282.webp" alt="Cells, fluid pour" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Cells, fluid pour</b></span></button></li>
+        <li hidden><button type="button" data-src="art/23-E519B650.webp"><img src="art/23-E519B650.webp" alt="Painted owls" data-note="Air-dry clay and acrylic paint." width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Painted owls</b><i>Air-dry clay and acrylic paint.</i></span></button></li>
+        <li hidden><button type="button" data-src="art/24-IMG_8816.webp"><img src="art/24-IMG_8816.webp" alt="Origami butterfly" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Origami butterfly</b></span></button></li>
+        <li hidden><button type="button" data-src="art/25-IMG_6118.webp"><img src="art/25-IMG_6118.webp" alt="Flower tealight holders" data-note="A day out with my niece." width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Flower tealight holders</b><i>A day out with my niece.</i></span></button></li>
+        <li hidden><button type="button" data-src="art/26-IMG_9366.webp"><img src="art/26-IMG_9366.webp" alt="Night sky, acrylic" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Night sky, acrylic</b></span></button></li>
+        <li hidden><button type="button" data-src="art/27-IMG_6342.webp"><img src="art/27-IMG_6342.webp" alt="Ganesha, quilling" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Ganesha, quilling</b></span></button></li>
+        <li hidden><button type="button" data-src="art/28-IMG_6339.webp"><img src="art/28-IMG_6339.webp" alt="Couple, acrylic" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Couple, acrylic</b></span></button></li>
+        <li hidden><button type="button" data-src="art/29-IMG_6344.webp"><img src="art/29-IMG_6344.webp" alt="Guitar, pencil" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Guitar, pencil</b></span></button></li>
+        <li hidden><button type="button" data-src="art/30-IMG_6343.webp"><img src="art/30-IMG_6343.webp" alt="Leopard, ink" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Leopard, ink</b></span></button></li>
+        <li hidden><button type="button" data-src="art/31-IMG_6338.webp"><img src="art/31-IMG_6338.webp" alt="Zentangle" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Zentangle</b></span></button></li>
+        <li hidden><button type="button" data-src="art/32-IMG_6340.webp"><img src="art/32-IMG_6340.webp" alt="Ganesha, painted stone" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Ganesha, painted stone</b></span></button></li>
+        <li hidden><button type="button" data-src="art/33-IMG_6341.webp"><img src="art/33-IMG_6341.webp" alt="Owl, painted stone" width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Owl, painted stone</b></span></button></li>
+        <li hidden><button type="button" data-src="art/34-IMG_6077.webp"><img src="art/34-IMG_6077.webp" alt="Tie-dye pouch" data-note="A day out with my niece." width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Tie-dye pouch</b><i>A day out with my niece.</i></span></button></li>
+        <li hidden><button type="button" data-src="art/35-IMG_6493.webp"><img src="art/35-IMG_6493.webp" alt="Fairy garden" data-note="Built around a bonsai." width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Fairy garden</b><i>Built around a bonsai.</i></span></button></li>
+        <li hidden><button type="button" data-src="art/36-IMG_0681.webp"><img src="art/36-IMG_0681.webp" alt="Gallery wall" data-note="Frames arranged at home." width="1200" height="1500" loading="lazy" decoding="async"><span class="cap"><b>Gallery wall</b><i>Frames arranged at home.</i></span></button></li>
+      </ul>
+      <button type="button" class="more" id="more">Show all 31</button>
+    </section>
 
-      <section class="work-section" id="work" aria-labelledby="work-title">
-        <div class="shell">
-          <header class="section-heading">
-            <h2 id="work-title">Selected work</h2>
-            <p>
-              Systems, outcomes, and the product questions behind them. These are selected from
-              my recent engineering roles.
-            </p>
-          </header>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact">
+        <a href="mailto:pallavi.raiturkar0@gmail.com">pallavi.raiturkar0@gmail.com</a>
+        <a href="https://www.linkedin.com/in/pallaviraiturkar">LinkedIn ↗</a>
+        <a href="https://github.com/pallaviraiturkar0">GitHub ↗</a>
+      </div>
+    </section>
+  </main>
 
-          <div class="work-list">
-            <article class="work-entry">
-              <header class="work-meta">
-                <p>GitHub</p>
-                <p>Staff Software Engineer</p>
-                <p>Jul 2025–Now</p>
-              </header>
-              <div class="work-main">
-                <h3>Making Copilot Chat faster, simpler, and easier to trust.</h3>
-                <p>
-                  I lead technical work across Copilot Chat on GitHub.com: architecture, quality,
-                  performance, agent capabilities, and the platform beneath the experience.
-                </p>
-                <div class="work-evidence">
-                  <p>
-                    <strong>40% lower P95 time to first token</strong> through telemetry-led
-                    performance work spanning flamegraphs, token reduction, attachment hydration,
-                    and parallel tool execution.
-                  </p>
-                  <p>
-                    Re-architected multi-agent workflows into skill-based systems and built offline
-                    LLM-as-a-judge evaluations for faster, safer iteration.
-                  </p>
-                </div>
-              </div>
-              <div class="work-mark" aria-hidden="true">
-                <svg viewBox="0 0 48 48">
-                  <path d="M8 34c8-17 20-23 32-18M10 38c10-8 18-7 28-1"></path>
-                  <path d="m32 8 3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7Z"></path>
-                </svg>
-              </div>
-            </article>
+  <footer>© 2026 Pallavi Raiturkar</footer>
+</div>
 
-            <article class="work-entry">
-              <header class="work-meta">
-                <p>Walmart</p>
-                <p>Staff Software Engineer</p>
-                <p>May 2024–Jul 2025</p>
-              </header>
-              <div class="work-main">
-                <h3>Building agents for decisions, not demos.</h3>
-                <p>
-                  I developed and scaled enterprise assistants for data insights, workforce
-                  planning, feedback analysis, and recommendations, then built the backend systems
-                  needed to run them reliably.
-                </p>
-                <div class="work-evidence">
-                  <p>
-                    A LangGraph text-to-SQL and insights agent served <strong>10K+ daily
-                    queries</strong> and reduced resolution time by <strong>35%</strong>.
-                  </p>
-                  <p>
-                    A workforce planning agent cut approval time by <strong>50%</strong> and
-                    automated more than <strong>200 hours per quarter</strong>.
-                  </p>
-                </div>
-              </div>
-              <div class="work-mark" aria-hidden="true">
-                <svg viewBox="0 0 48 48">
-                  <circle cx="12" cy="25" r="4"></circle>
-                  <circle cx="24" cy="11" r="4"></circle>
-                  <circle cx="36" cy="25" r="4"></circle>
-                  <circle cx="24" cy="38" r="4"></circle>
-                  <path d="m15 22 6-8m6 0 6 8m0 6-6 7m-6 0-6-7M16 25h16"></path>
-                </svg>
-              </div>
-            </article>
-
-            <article class="work-entry">
-              <header class="work-meta">
-                <p>Walmart</p>
-                <p>Software Engineer II → Senior Software Engineer</p>
-                <p>Sep 2019–May 2024</p>
-              </header>
-              <div class="work-main">
-                <h3>Learning the systems underneath the interface.</h3>
-                <p>
-                  My path at Walmart moved through data pipelines, full-stack applications,
-                  real-time dashboards, machine learning, deployment frameworks, and evaluation.
-                  Working across layers made product quality inseparable from system quality.
-                </p>
-                <div class="work-evidence">
-                  <p>
-                    Built grocery fulfillment applications with Python, Angular, and React, plus
-                    real-time operational dashboards using WebSockets and Elasticsearch.
-                  </p>
-                  <p>
-                    Led Kubernetes deployment and testing frameworks that improved release speed,
-                    rollback safety, and production observability.
-                  </p>
-                </div>
-              </div>
-              <div class="work-mark" aria-hidden="true">
-                <svg viewBox="0 0 48 48">
-                  <path d="m7 17 17-8 17 8-17 8-17-8Zm0 8 17 8 17-8M7 33l17 8 17-8"></path>
-                </svg>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="research-section" id="research" aria-labelledby="research-title">
-        <div class="research-shell shell">
-          <div class="research-statement">
-            <h2 id="research-title">Research made user empathy operational.</h2>
-            <p>
-              In human-centered computing, I used eye tracking, pupil response, physiology, and
-              machine learning to study what people attend to and how they respond.
-            </p>
-            <blockquote>
-              That work taught me to care about what users want in a way I still practice as an
-              engineer: observe behavior, measure the real experience, and let the evidence change
-              the product.
-            </blockquote>
-          </div>
-
-          <div class="research-details">
-            <p>University of Florida · Research Assistant · 2015–2019</p>
-            <ul>
-              <li>Eye tracking across 2D video and virtual reality</li>
-              <li>Visual perception of synthetic and photographic portraits</li>
-              <li>Physiological response and emotional engagement</li>
-              <li>Gesture recognition for human-computer interaction</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="publications shell" aria-labelledby="publications-title">
-          <header class="publication-heading">
-            <h3 id="publications-title">Publications</h3>
-            <p>Peer-reviewed papers, conference work, and technical reports.</p>
-          </header>
-
-          <ol class="publication-list">
-            <li>
-              <a href="https://doi.org/10.1142/S1793351X19400183" target="_blank" rel="noopener">
-                <span class="paper-year">2019</span>
-                <span class="paper-venue">International Journal of Semantic Computing</span>
-                <span class="paper-title">A Benchmark of Four Methods for Generating 360° Saliency Maps from Eye Tracking Data</span>
-                <span class="paper-arrow" aria-hidden="true">↗</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://doi.org/10.1080/08941920.2018.1556760" target="_blank" rel="noopener">
-                <span class="paper-year">2019</span>
-                <span class="paper-venue">Society &amp; Natural Resources</span>
-                <span class="paper-title">Using Audience Physiology to Assess Conservation Messages and Animal Taxa</span>
-                <span class="paper-arrow" aria-hidden="true">↗</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://dl.acm.org/doi/10.1145/3281505.3281538" target="_blank" rel="noopener">
-                <span class="paper-year">2018</span>
-                <span class="paper-venue">ACM VRST</span>
-                <span class="paper-title">An Evaluation of Pupillary Light Response Models for 2D Screens and Virtual Reality HMDs</span>
-                <span class="paper-arrow" aria-hidden="true">↗</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://faculty.eng.ufl.edu/jain/research/completed-projects/perception-of-computer-generated-faces/" target="_blank" rel="noopener">
-                <span class="paper-year">2018</span>
-                <span class="paper-venue">University of Florida Technical Report</span>
-                <span class="paper-title">Identifying Computer-Generated Portraits: An Eye Tracking Study</span>
-                <span class="paper-arrow" aria-hidden="true">↗</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://dl.acm.org/doi/10.1145/2931002.2931009" target="_blank" rel="noopener">
-                <span class="paper-year">2016</span>
-                <span class="paper-venue">ACM Symposium on Applied Perception</span>
-                <span class="paper-title">Decoupling Light Reflex from Pupillary Dilation to Measure Emotional Arousal in Videos</span>
-                <span class="paper-arrow" aria-hidden="true">↗</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://dl.acm.org/doi/10.1145/2931002.2948723" target="_blank" rel="noopener">
-                <span class="paper-year">2016</span>
-                <span class="paper-venue">ACM Symposium on Applied Perception</span>
-                <span class="paper-title">Scan Path and Movie Trailers for Implicit Annotation of Videos</span>
-                <span class="paper-arrow" aria-hidden="true">↗</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://dl.acm.org/doi/10.1145/2931002.2931016" target="_blank" rel="noopener">
-                <span class="paper-year">2016</span>
-                <span class="paper-venue">ACM Symposium on Applied Perception</span>
-                <span class="paper-title">Measuring Viewers’ Heart Rate Response to Environment Conservation Videos</span>
-                <span class="paper-arrow" aria-hidden="true">↗</span>
-              </a>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="studio-section" id="studio" aria-labelledby="studio-title">
-        <div class="studio-shell shell">
-          <header class="studio-heading">
-            <div>
-              <h2 id="studio-title">Studio, off the clock.</h2>
-              <p>
-                I like exploring across forms and media. This is a separate track from my
-                engineering work: a place for making, looking, and learning without needing the
-                experiment to become a product.
-              </p>
-            </div>
-            <p class="studio-note">
-              The studies here are original, site-specific generative pieces that establish the
-              visual room while the personal collection grows.
-            </p>
-            <svg class="studio-doodle" aria-hidden="true" viewBox="0 0 130 92">
-              <path d="M10 58c31-48 74-55 110-11M17 70c33-28 62-24 96 4"></path>
-              <circle cx="28" cy="35" r="7"></circle>
-              <circle cx="102" cy="20" r="8.5"></circle>
-              <circle cx="113" cy="29" r="8.5"></circle>
-            </svg>
-          </header>
-
-          <div class="studio-grid">
-            <figure class="studio-figure studio-figure-tall">
-              <img src="/assets/studio-form.svg" alt="Abstract mineral-green contour study on a dark field" loading="lazy">
-              <figcaption><span>Form study</span><span>Contour / repetition</span></figcaption>
-            </figure>
-            <figure class="studio-figure">
-              <img src="/assets/studio-color.svg" alt="Overlapping iris and mineral color planes" loading="lazy">
-              <figcaption><span>Color study</span><span>Balance / interference</span></figcaption>
-            </figure>
-            <figure class="studio-figure">
-              <img src="/assets/studio-material.svg" alt="Textured dark surface with hand-drawn light marks" loading="lazy">
-              <figcaption><span>Material study</span><span>Grain / gesture</span></figcaption>
-            </figure>
-            <figure class="studio-figure studio-figure-wide">
-              <img src="/assets/studio-light.svg" alt="Dark geometric form cut by a pale beam of light" loading="lazy">
-              <figcaption><span>Light study</span><span>Shadow / aperture</span></figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="contact-shell shell">
-          <div>
-            <h2 id="contact-title">Let’s work on something that matters to the people using it.</h2>
-            <svg class="contact-doodle" aria-hidden="true" viewBox="0 0 220 70">
-              <path d="M6 37c44-35 85 26 130-2 24-15 44-14 77 6"></path>
-              <path d="m198 29 16 12-18 9"></path>
-            </svg>
-          </div>
-          <div class="contact-copy">
-            <p>
-              I’m interested in senior engineering roles, technical leadership, AI product work,
-              research-informed development, and thoughtful collaborations.
-            </p>
-            <div class="contact-links">
-              <a href="mailto:pallavi.raiturkar0@gmail.com">
-                Email
-                <span aria-hidden="true">↗</span>
-              </a>
-              <a href="https://www.linkedin.com/in/pallaviraiturkar" target="_blank" rel="me noopener">
-                LinkedIn
-                <span aria-hidden="true">↗</span>
-              </a>
-              <a href="https://github.com/pallaviraiturkar0" target="_blank" rel="me noopener">
-                GitHub
-                <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <footer class="site-footer shell">
-      <p>
-        Designed and built with care, by
-        <a class="footer-copilot" href="https://github.com/features/copilot" target="_blank" rel="noopener">
-          <svg class="copilot-mark" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-            <path d="M7.998 15.035c-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.201-.508-.254-1.084-.254-1.656 0-.87.128-1.769.693-2.484.579-.733 1.494-1.124 2.724-1.261 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612.012.076.024.148.037.218.924.385 1.522 1.471 1.591 2.095v1.872c0 .766-3.351 3.795-8.002 3.795Zm0-1.485c2.28 0 4.584-1.11 5.002-1.433V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-1.146 0-2.059-.327-2.71-.991A3.222 3.222 0 0 1 8 6.303a3.24 3.24 0 0 1-.544.743c-.65.664-1.563.991-2.71.991-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433ZM6.762 2.83c-.193-.206-.637-.413-1.682-.297-1.019.113-1.479.404-1.713.7-.247.312-.369.789-.369 1.554 0 .793.129 1.171.308 1.371.162.181.519.379 1.442.379.853 0 1.339-.235 1.638-.54.315-.322.527-.827.617-1.553.117-.935-.037-1.395-.241-1.614Zm4.155-.297c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7Z"></path>
-            <path d="M6.25 9.037a.75.75 0 0 1 .75.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 .75-.75Zm4.25.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 1.5 0Z"></path>
-          </svg>
-          Copilot</a>.
-      </p>
-      <p>© <span data-year>2026</span> Pallavi Raiturkar</p>
-    </footer>
-  </body>
+<script>
+  (() => {
+    const canvas = document.getElementById('portrait');
+    const ctx = canvas.getContext('2d');
+    const img = new Image();
+    img.src = 'pallavi-pixel.png';
+    img.onload = () => {
+      const N = 64, S = canvas.width, cell = S / N;
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) { ctx.drawImage(img, 0, 0, S, S); return; }
+      const small = document.createElement('canvas');
+      small.width = small.height = N;
+      const sctx = small.getContext('2d');
+      sctx.drawImage(img, 0, 0, N, N);
+      const data = sctx.getImageData(0, 0, N, N).data;
+      const order = [...Array(N * N).keys()];
+      for (let i = order.length - 1; i > 0; i--) { const j = Math.random() * (i + 1) | 0; [order[i], order[j]] = [order[j], order[i]]; }
+      const duration = 1400, start = performance.now();
+      let drawn = 0;
+      const step = now => {
+        const target = Math.min(order.length, Math.ceil(((now - start) / duration) ** 1.6 * order.length));
+        for (; drawn < target; drawn++) {
+          const k = order[drawn], x = k % N, y = k / N | 0, p = k * 4;
+          ctx.fillStyle = `rgb(${data[p]},${data[p + 1]},${data[p + 2]})`;
+          ctx.fillRect(x * cell, y * cell, cell, cell);
+        }
+        if (drawn < order.length) requestAnimationFrame(step);
+        else setTimeout(() => ctx.drawImage(img, 0, 0, S, S), 150);
+      };
+      requestAnimationFrame(step);
+    };
+  })();
+</script>
+<dialog class="lightbox" id="lightbox" aria-label="Artwork">
+  <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <button type="button" class="lb-btn lb-close" aria-label="Close">×</button>
+  <button type="button" class="lb-btn lb-prev" aria-label="Previous">←</button>
+  <button type="button" class="lb-btn lb-next" aria-label="Next">→</button>
+</dialog>
+<script>
+  (() => {
+    const items = [...document.querySelectorAll('#gallery li')];
+    const more = document.getElementById('more');
+    more.addEventListener('click', () => { items.forEach(li => li.hidden = false); more.parentElement.querySelector('.gallery').classList.remove('collapsed'); more.remove(); });
+    const dlg = document.getElementById('lightbox'), img = document.getElementById('lb-img'), cap = document.getElementById('lb-cap');
+    let i = 0;
+    const show = n => { i = (n + items.length) % items.length; const b = items[i].querySelector('button'), el = b.querySelector('img'), alt = el.alt, note = el.dataset.note; img.src = b.dataset.src; img.alt = alt; cap.textContent = note ? alt + ' — ' + note : alt; };
+    items.forEach((li, n) => li.querySelector('button').addEventListener('click', () => { show(n); dlg.showModal(); }));
+    dlg.querySelector('.lb-close').onclick = () => dlg.close();
+    dlg.querySelector('.lb-prev').onclick = () => show(i - 1);
+    dlg.querySelector('.lb-next').onclick = () => show(i + 1);
+    dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+    dlg.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') show(i - 1); if (e.key === 'ArrowRight') show(i + 1); });
+  })();
+</script>
+</body>
 </html>
